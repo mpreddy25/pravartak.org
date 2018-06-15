@@ -1,0 +1,212 @@
+
+.container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  height: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.wrap {
+    -webkit-perspective: 800px;
+            perspective: 800px;
+    -webkit-perspective-origin: 50% 100px;
+            perspective-origin: 50% 100px;
+}
+
+.cube div {
+    border: solid 1px #D3D3D3;
+    box-shadow: inset 10px 10px 117px -22px rgba(0, 0, 0, 0.75);
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    width: 200px;
+}
+
+.cube:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+i.fa {
+    font-size: 100px;
+    line-height: 200px;
+}
+
+/*Twitter*/
+.twitter {
+    -webkit-transform: translateZ(100px);
+            transform: translateZ(100px);
+}
+
+.twitter:hover {
+    background-color: rgba(0, 172, 237, .5);
+}
+
+.twitter:hover .fa-twitter {
+    color: white;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+/*Linkedin*/
+.linkedin {
+    -webkit-transform: rotateY(-270deg) translateX(100px);
+            transform: rotateY(-270deg) translateX(100px);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+}
+
+.linkedin:hover {
+    background-color: rgba(0, 119, 181, 0.5);
+}
+
+.linkedin:hover .fa-linkedin {
+    color: white;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+/*Facebook*/
+.facebook {
+    -webkit-transform: translateZ(-100px) rotateY(180deg);
+            transform: translateZ(-100px) rotateY(180deg);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+}
+
+.facebook:hover {
+    background-color: rgba(59, 89, 152, 0.5);
+}
+
+.facebook:hover .fa-facebook {
+    color: white;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+/*Google Plus*/
+.google-plus {
+    -webkit-transform: rotateY(270deg) translateX(-100px);
+            transform: rotateY(270deg) translateX(-100px);
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+}
+
+.google-plus:hover {
+    background-color: rgba(211, 72, 54, 0.5);
+}
+
+.google-plus:hover .fa-google-plus {
+    color: white;
+}
+
+.fa-google-plus {
+    color: #d34836;
+}
+
+/*Bottom unfilled*/
+.bottom {
+    -webkit-transform: rotateX(90deg) translateY(100px);
+            transform: rotateX(90deg) translateY(100px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+}
+
+/*Top Unfilled*/
+.top {
+    -webkit-transform: rotateX(-90deg) translateY(-100px);
+            transform: rotateX(-90deg) translateY(-100px);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+}
+
+/*Y rotation on cube div*/
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0)
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg)
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0)
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg)
+    }
+}
+
+.cube {
+    -webkit-animation: spin 10s infinite linear;
+            animation: spin 10s infinite linear;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 200px;
+}
+
+
+
+
+
+
+
+/* 
+<!-- <?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$dbname = "pravartak";
+
+$cnn = mysqli_connect ( $host, $user, $password, $dbname );
+$sql = "Select name from test";
+$result = mysqli_query ( $cnn, $sql );
+if ($result == false) {
+    echo "Error: " . mysqli_error($cnn);
+} else {
+    if (mysqli_num_rows ( $result ) < 1) {
+        echo "Databases not found.";
+    } else {
+        echo "<ul>";
+        while ( $row = mysqli_fetch_row($result)) {
+            echo "<li>$row[0]</li>";
+        }
+        echo "</ul>";
+    }
+}
+?> --> */
+
+
+/*
+<div class="container">
+  <div class="wrap">
+    <div class="cube">
+      <div class="top"></div>
+      <div class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+      <div class="linkedin"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+      <div class="google-plus"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+      <div class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+      <div class="bottom"></div>
+    </div>
+  </div>
+</div>
+
+*/

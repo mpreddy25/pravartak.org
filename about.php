@@ -20,7 +20,7 @@
     <body>
     <div class="header container">
       <div class="visible-xs visible-sm col-xs-12 col-sm-12 text-center sm-logo">
-        <a rel="home" href="index.html">
+        <a rel="home" href="index.php">
           <img src="img/logo.png" width="200" alt="logo">
         </a>
       </div>
@@ -36,17 +36,17 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="selected"><a href="about.html">About</a></li>
-                    <li><a href="service.html">Sevices</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li class="selected"><a href="about.php">About</a></li>
+                    <li><a href="service.php">Sevices</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
                     <li class= "hidden-xs hidden-sm">
-                     <a rel="home" href="index.html"><img class="logo" src="img/logo.png" width="200" alt="logo"></a>
+                     <a rel="home" href="index.php"><img class="logo" src="img/logo.png" width="200" alt="logo"></a>
                     </li>
-                    <li><a href="event.html">Events</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="donate.html">Donate</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="event.php">Events</a></li>
+                    <li><a href="team.php">Team</a></li>
+                    <li><a href="donate.php">Donate</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>
