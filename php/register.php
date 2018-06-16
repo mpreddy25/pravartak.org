@@ -38,6 +38,7 @@ if ($result == false) {
             "redirect_url" => "http://www.google.com/"
             ));
         //print_r($response);
+        
         $pay_url = $response['longurl'];
         header("Location: $pay_url");
         exit(); 
